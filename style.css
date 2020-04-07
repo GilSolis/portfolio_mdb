@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Alfa+Slab+One");
 * {
     padding: 0;
     margin: 0;
@@ -40,4 +41,28 @@ html {
 #resume {
     height: 100vh;
     background-color: yellowgreen;
+}
+
+#name {
+    width: 40vw;
+    text-align: justify;
+}
+
+#home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-family: Alfa Slab One;
+    text-align-last: justify;
+    font-size: 9vw;
+}
+
+h4 {
+    font-family: Alfa Slab One;
+    margin-top: -10%;
+    text-align: center;
+    font-size: 5vw;
 }
