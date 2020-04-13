@@ -18,7 +18,18 @@ html {
 #home {
     height: 100vh;
     /* flex-direction: column; */
-    background-color: aquamarine;
+    background-color: white;
+}
+
+#title {
+    background: url("images/giphy.gif");
+    background: url("images/abstract.gif");
+    font-family: Alfa Slab One;
+    /* color: black; */
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
 }
 
 #about {
