@@ -89,9 +89,10 @@ ul li a {
     font-weight: bolder;
 }
 
-ul li a:hover {
+
+/* ul li a:hover {
     color: blue;
-}
+} */
 
 ul li {
     position: absolute;
@@ -108,6 +109,7 @@ ul li {
 ul li:hover {
     background: magenta;
     opacity: .5;
+    color: blue;
 }
 
 ul li:nth-child(2) {
@@ -130,6 +132,7 @@ ul li:nth-child(3) {
 
 ul li:nth-child(1):hover~.box {
     background: url(images/cleague.jpg);
+    background: url(images/championsleague.jpg);
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center center;
@@ -138,6 +141,7 @@ ul li:nth-child(1):hover~.box {
 
 ul li:nth-child(2):hover~.box {
     background: url(images/covid.jpg);
+    background: url(images/covidnstuff.jpg);
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center center;
