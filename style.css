@@ -90,35 +90,32 @@ ul li a {
 }
 
 ul li a:hover {
-    color: white;
-    text-decoration: none;
-    transform: scale(1.5);
-    /* opacity: 1; */
-    /* font-weight: bolder; */
+    color: blue;
 }
 
 ul li {
     position: absolute;
-    width: 33%;
+    width: 33.3%;
     height: 100%;
     text-align: center;
     line-height: 150vh;
     font-size: 5vh;
     transition: .7s;
     z-index: 1;
+    color: navy;
 }
 
 ul li:hover {
-    background: deeppink;
+    background: magenta;
     opacity: .5;
 }
 
 ul li:nth-child(2) {
-    left: 33%
+    left: 33.3%
 }
 
 ul li:nth-child(3) {
-    left: 66%
+    left: 66.6%
 }
 
 .box {
@@ -136,6 +133,7 @@ ul li:nth-child(1):hover~.box {
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center center;
+    color: navy;
 }
 
 ul li:nth-child(2):hover~.box {
@@ -155,4 +153,20 @@ ul li:nth-child(3):hover~.box {
 #moreprojects {
     background-color: cadetblue;
     height: 100vh;
+}
+
+a p {
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(.8);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
