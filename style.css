@@ -76,7 +76,16 @@ h4 {
 #about {
     height: 100vh;
     color: black;
-    background-color: blueviolet;
+    background-color: white
+}
+
+#biopic {
+    border-radius: 50%;
+    border: 3px solid silver;
+}
+
+.media {
+    padding-top: 10%;
 }
 
 #contact {
