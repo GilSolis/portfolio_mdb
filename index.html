@@ -17,18 +17,18 @@
 </head>
 
 <body>
-    <div id="home" class="d-flex flex-column">
-
+    <!-- <div  class="d-flex flex-column"> -->
+    <div id="home" class="container-fluid d-flex align-items-center justify-content-center ">
         <div id="name">
             <div id="title">
                 <h1>Gil Solis</h1>
                 <h4 class="pt-3">Full Stack Dev</h4>
             </div>
             <div id="links" class="d-flex justify-content-between">
-                <a class="hoverlinks" href="#about">About</a>
-                <a class="hoverlinks" href="#projects">Projects</a>
-                <a class="hoverlinks" href="#contact">Contact</a>
-                <a class="hoverlinks" href="#resume">Resume</a>
+                <a class="hoverlinks" href="#about">About&nbsp</a>
+                <a class="hoverlinks" href="#projects">Projects&nbsp</a>
+                <a class="hoverlinks" href="#contact">Contact&nbsp</a>
+                <a class="hoverlinks" href="#resume">Resume&nbsp</a>
             </div>
             <div id="social" class="d-flex justify-content-around">
                 <a class="hoverlinks" href="https://github.com/GilSolis"><i class="fab fa-github hoverlinks" ></i></a>
@@ -36,9 +36,29 @@
             </div>
         </div>
     </div>
+    </div>
 
     <div id="about">About</div>
-    <div id="projects">Projects</div>
+    <div id="projects">
+        <ul>
+            <li>
+                <a class="pulse" href="https://alexshanless.github.io/Champ-Leag-Tracker">
+                    <p>Champions League</p>
+                </a>
+            </li>
+            <li>
+                <a href="http://covidnstuff.herokuapp.com/">
+                    <p>Covid n Stuff</p>
+                </a>
+            </li>
+            <li>
+                <a class="pulse" href="moreprojects.html">
+                    <p>More Projects</p>
+                </a>
+            </li>
+            <div class="box"></div>
+        </ul>
+    </div>
     <nav class="navbar navbar-expand-lg black scrolling-navbar">
         <a href="#home">Home&nbsp;</a>
         <a href="#about">About&nbsp;</a>
@@ -46,6 +66,7 @@
         <a href="#contact">Contact&nbsp;</a>
         <a href="#resume">Resume&nbsp;</a>
     </nav>
+
     <div id="contact">Contact</div>
     <div id="resume">Resume</div>
 </body>
