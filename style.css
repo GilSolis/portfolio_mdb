@@ -179,7 +179,7 @@ ul li:nth-child(2):hover~.box {
 }
 
 ul li:nth-child(3):hover~.box {
-    background: url(images/right.jpeg);
+    background: url(images/scrabble.jpg);
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center center;
