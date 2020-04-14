@@ -86,6 +86,8 @@ h4 {
 
 .media {
     padding-top: 10%;
+    /* display: flex;
+    align-content: center; */
 }
 
 #contact {
@@ -123,7 +125,7 @@ ul {
 }
 
 ul li a {
-    color: yellow;
+    color: goldenrod;
     font-weight: bolder;
 }
 
@@ -179,7 +181,7 @@ ul li:nth-child(2):hover~.box {
 }
 
 ul li:nth-child(3):hover~.box {
-    background: url(images/scrabble.jpg);
+    background: url(images/S1.jpg);
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center center;
