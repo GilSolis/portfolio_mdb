@@ -92,7 +92,7 @@ h4 {
 
 #contact {
     height: 100vh;
-    background-color: crimson;
+    background-color: lightcyan;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -134,7 +134,7 @@ ul li {
     width: 33.3%;
     height: 100%;
     text-align: center;
-    line-height: 150vh;
+    line-height: 100vh;
     font-size: 5vh;
     transition: .7s;
     z-index: 1;
@@ -217,3 +217,24 @@ a p {
         transform: scale(.95);
     }
 }
+
+/* contact styling */
+
+.transform{
+    height: 0vh;
+    width: 0vw;
+    -webkit-transition: all 2s ease;  
+    -moz-transition: all 2s ease;  
+    -o-transition: all 2s ease;  
+    -ms-transition: all 2s ease;  
+    transition: all 2s ease;
+}
+
+.transform-active{
+    background-color: #45CEE0;
+    height: 80vh;
+    width: 80vw;
+
+}
+
+

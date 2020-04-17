@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <!-- Google Fonts -->
@@ -31,8 +33,9 @@
                 <a class="hoverlinks" href="#resume">Resume&nbsp</a>
             </div>
             <div id="social" class="d-flex justify-content-around">
-                <a class="hoverlinks" href="https://github.com/GilSolis"><i class="fab fa-github hoverlinks" ></i></a>
-                <a class="hoverlinks" href="https://www.linkedin.com/in/gilbert-solis/"><i class="fab fa-linkedin hoverlinks"></i></a>
+                <a class="hoverlinks" href="https://github.com/GilSolis"><i class="fab fa-github hoverlinks"></i></a>
+                <a class="hoverlinks" href="https://www.linkedin.com/in/gilbert-solis/"><i
+                        class="fab fa-linkedin hoverlinks"></i></a>
             </div>
         </div>
     </div>
@@ -43,11 +46,17 @@
         <div class="media">
             <img id="biopic" class="d-flex mr-3" src="images/bio-pic-small.JPG">
             <div class="media-body">
-                <h3 class="mt-0 font-weight-bold mr-1">About Gil <a href="#home"><i class="fas fa-home hoverlinks mr-1" href="#home"></i></a> <a href="https://github.com/GilSolis"><i class="fab fa-github hoverlinks mr-1" ></i></a>
-                    <a href="https://www.linkedin.com/in/gilbert-solis/"><i class="fab fa-linkedin hoverlinks mr-1"></i></a></h3>
+                <h3 class="mt-0 font-weight-bold mr-1">About Gil <a href="#home"><i class="fas fa-home hoverlinks mr-1"
+                            href="#home"></i></a> <a href="https://github.com/GilSolis"><i
+                            class="fab fa-github hoverlinks mr-1"></i></a>
+                    <a href="https://www.linkedin.com/in/gilbert-solis/"><i
+                            class="fab fa-linkedin hoverlinks mr-1"></i></a></h3>
                 <p>
-                    I am a System Administrator/Site Reliability Engineer looking to tap into my creative juices as I learn all things web development. When I am not sitting behind a screen I enjoying making my wife and son laugh with my sarcastic sense of humor. When I
-                    can manage to find some free time I enjoy building blinky things with Arduinos. I am always down to play most card games, Scrabble or Tetris.
+                    I am a System Administrator/Site Reliability Engineer looking to tap into my creative juices as I
+                    learn all things web development. When I am not sitting behind a screen I enjoying making my wife
+                    and son laugh with my sarcastic sense of humor. When I
+                    can manage to find some free time I enjoy building blinky things with Arduinos. I am always down to
+                    play most card games, Scrabble or Tetris.
                 </p>
             </div>
         </div>
@@ -83,8 +92,96 @@
         <a href="#resume">Resume&nbsp;</a>
     </nav>
 
-    <div id="contact">Contact</div>
+    <div id="contact">
+        <section class="m-5 transform">
+
+            <!-- Section heading -->
+            <h2 class="h1-responsive font-weight-bold text-center my-5">Contact Gil</h2>
+            <!-- Grid row -->
+            <div class="row">
+
+                <!-- Grid column -->
+                <div class="col-md-9 mb-md-0 mb-5">
+                    <form>
+                        <!-- Grid row -->
+                        <div class="row">
+                            <!-- Grid column -->
+                            <div class="col-md-6">
+                                <div class="md-form mb-0">
+                                    <input type="text" id="contact-name" class="form-control">
+                                    <label for="contact-name" class="">Your name</label>
+                                </div>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-md-6">
+                                <div class="md-form mb-0">
+                                    <input type="text" id="contact-email" class="form-control">
+                                    <label for="contact-email" class="">Your email</label>
+                                </div>
+                            </div>
+                            <!-- Grid column -->
+
+                        </div>
+                        <!-- Grid row -->
+
+                        <!-- Grid row -->
+                        <div class="row">
+
+                            <!-- Grid column -->
+                            <div class="col-md-12">
+                                <div class="md-form mb-0">
+                                    <input type="text" id="contact-Subject" class="form-control">
+                                    <label for="contact-Subject" class="">Subject</label>
+                                </div>
+                            </div>
+                            <!-- Grid column -->
+
+                        </div>
+                        <!-- Grid row -->
+
+                        <!-- Grid row -->
+                        <div class="row">
+
+                            <!-- Grid column -->
+                            <div class="col-md-12">
+                                <div class="md-form">
+                                    <textarea id="contact-message" class="form-control md-textarea" rows="3"></textarea>
+                                    <label for="contact-message">Your message</label>
+                                </div>
+                            </div>
+                            <!-- Grid column -->
+
+                        </div>
+                        <!-- Grid row -->
+
+                    </form>
+
+                    <div class="text-center text-md-left">
+                        <a class="btn btn-primary btn-md">Send</a>
+                    </div>
+
+                </div>
+                <!-- Grid column -->
+
+
+
+            </div>
+            <!-- Grid row -->
+            <a id="contactButton" class="btn btn-primary btn-md">Contact</a>
+
+        </section>
+
+    </div>
     <div id="resume">Resume</div>
+    <script>
+        $("#contactButton").click(function () {
+            $('.transform').toggleClass('transform-active');
+            console.log("I've been clicked")
+        });
+    </script>
 </body>
+
 
 </html>
