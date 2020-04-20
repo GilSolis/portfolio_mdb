@@ -90,11 +90,7 @@ h4 {
     align-content: center; */
 }
 
-#contact {
-    height: 100vh;
-    background-color: lightcyan;
-    font-family: Arial, Helvetica, sans-serif;
-}
+
 
 #projects {
     height: 100vh;
@@ -231,45 +227,53 @@ a p {
 }
 
 .transform-active{
-    background-color: #45CEE0;
+    background-color: lightsteelblue;
     height: 70vh;
-    width: 80vw;
+    width: 90vw;
+    border: 1px solid black
 
 }
 
-#btns {
-    display: flex;
-    align-content: center;
+#contact {
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    
 }
+
+input {
+    color: black;
+}
+
+
 
 
 /* media breakpoints */
 @media screen and (max-width:320px) {
-ul li{
+ul li, label, input{
     font-size: 1vh;
 }
 
 }
 @media screen and (min-width:321px) and (max-width:639px) {
-    ul li{
+    ul li, label, input{
         font-size: 1vh;
     }
 }
 @media screen and (min-width:640px) and (max-width:959px) {
-    ul li{
+    ul li, label, input{
         font-size: 2vh;
     }
 }
-@media screen and (min-width:960px) and (max-width:1279px) {ul li{
+@media screen and (min-width:960px) and (max-width:1279px) {ul li, label, input{
     font-size: 2vh;
 }}
-@media screen and (min-width:1280px) and (max-width:1599px) {ul li{
+@media screen and (min-width:1280px) and (max-width:1599px) {ul li, label, input{
     font-size: 3vh;
 }}
-@media screen and (min-width:1600px) {ul li{
+@media screen and (min-width:1600px) {ul li, label, input{
     font-size: 3vh;
 }}
-@media screen and (min-width:1920px) {ul li{
+@media screen and (min-width:1920px) {ul li, label, input{
     font-size: 4vh;
 }}
 
