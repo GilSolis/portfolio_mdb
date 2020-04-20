@@ -84,102 +84,104 @@
             <div class="box"></div>
         </ul>
     </div>
-    <nav class="navbar navbar-expand-lg black scrolling-navbar">
-        <a href="#home">Home&nbsp;</a>
-        <a href="#about">About&nbsp;</a>
-        <a href="#projects">Projects&nbsp;</a>
-        <a href="#contact">Contact&nbsp;</a>
-        <a href="#resume">Resume&nbsp;</a>
-    </nav>
+
 
     <div id="contact">
+        <nav class="navbar navbar-expand-lg black scrolling-navbar">
+            <a href="#home">Home&nbsp;</a>
+            <a href="#about">About&nbsp;</a>
+            <a href="#projects">Projects&nbsp;</a>
+            <a href="#contact">Contact&nbsp;</a>
+            <a href="#resume">Resume&nbsp;</a>
+        </nav>
         <section class="m-5 transform">
 
-            <!-- Section heading -->
-            <h2 class="h1-responsive font-weight-bold text-center my-5">Contact Gil</h2>
-            <!-- Grid row -->
-            <div class="row">
+            <!-- <h2 class="h1-responsive font-weight-bold text-center my-5">Contact Gil</h2> -->
 
-                <!-- Grid column -->
+            <div id="formId" class="row">
                 <div class="col-md-9 mb-md-0 mb-5">
                     <form>
-                        <!-- Grid row -->
+                        <h2 class="h1-responsive font-weight-bold text-center my-5">Contact Gil</h2>
                         <div class="row">
-                            <!-- Grid column -->
                             <div class="col-md-6">
-                                <div class="md-form mb-0">
-                                    <input type="text" id="contact-name" class="form-control">
-                                    <label for="contact-name" class="">Your name</label>
+                                <div class="md-form mb-0 ml-1">
+                                    <label for="contact-name" class="">Name:</label>
+                                    <br />
+                                    <br />
+                                    <input type="text" id="contact-name" class="form-control" placeholder="Your name">
                                 </div>
                             </div>
-                            <!-- Grid column -->
-
-                            <!-- Grid column -->
                             <div class="col-md-6">
-                                <div class="md-form mb-0">
-                                    <input type="text" id="contact-email" class="form-control">
-                                    <label for="contact-email" class="">Your email</label>
+                                <div class="md-form mb-0 ml-1">
+                                    <label for="contact-email" class=""> Email</label>
+                                    <br />
+                                    <br />
+                                    <input type="text" id="contact-email" class="form-control" placeholder="Your email">
                                 </div>
                             </div>
-                            <!-- Grid column -->
-
                         </div>
-                        <!-- Grid row -->
-
-                        <!-- Grid row -->
                         <div class="row">
-
-                            <!-- Grid column -->
                             <div class="col-md-12">
-                                <div class="md-form mb-0">
-                                    <input type="text" id="contact-Subject" class="form-control">
+                                <div class="md-form mb-0 ml-1">
                                     <label for="contact-Subject" class="">Subject</label>
+                                    <br />
+                                    <br />
+                                    <input type="text" id="contact-Subject" class="form-control"
+                                        placeholder="Your email">
                                 </div>
                             </div>
-                            <!-- Grid column -->
-
                         </div>
-                        <!-- Grid row -->
-
-                        <!-- Grid row -->
                         <div class="row">
-
-                            <!-- Grid column -->
                             <div class="col-md-12">
-                                <div class="md-form">
-                                    <textarea id="contact-message" class="form-control md-textarea" rows="3"></textarea>
+                                <div class="md-form ml-1">
                                     <label for="contact-message">Your message</label>
+                                    <br />
+                                    <br />
+                                    <textarea id="contact-message" class="form-control md-textarea" rows="3"></textarea>
                                 </div>
                             </div>
-                            <!-- Grid column -->
-
+                            <!-- <a id="send" class="btn btn-primary btn-md">Send</a> -->
+                            <!-- <a id="submitBtn" class="btn btn-primary btn-md transformBtn">Send</a> -->
                         </div>
-                        <!-- Grid row -->
-
                     </form>
-
-                    <div class="text-center text-md-left">
-                        <a class="btn btn-primary btn-md">Send</a>
-                    </div>
-
                 </div>
-                <!-- Grid column -->
-
-
-
             </div>
-            <!-- Grid row -->
-            <a id="contactButton" class="btn btn-primary btn-md">Contact</a>
-
         </section>
-
+        <div id="btns" class="row">
+            <a id="contactButton" class="btn btn-primary btn-md">Contact</a>
+            <a id="send" class="btn btn-primary btn-md">Send</a>
+        </div>
     </div>
     <div id="resume">Resume</div>
     <script>
+        $(document).ready(() => {
+            $("#send").hide();
+            $("#formId").hide();
+        })
+
         $("#contactButton").click(function () {
             $('.transform').toggleClass('transform-active');
+
+            if ($("#contactButton").text() === "Contact") {
+                $("#formId").show();
+                $("#send").show();
+                $("#contactButton").text("Back");
+
+            } else {
+                $("#formId").hide();
+                $("#send").hide();
+                $("#contactButton").text("Contact");
+            }
+
             console.log("I've been clicked")
         });
+
+        // $("#contactButton").click(function () {
+        //     $('.transform').toggleClass('transform-active');
+        //     console.log("I've been clicked")
+        //     $('.transformBtn').toggleClass('transforBtn-active');
+        // });
+
     </script>
 </body>
 
