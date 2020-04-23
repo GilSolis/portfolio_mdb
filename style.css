@@ -75,7 +75,7 @@ h4 {
 #about {
     height: 100vh;
     color: black;
-    background-color: white
+    
 }
 
 #biopic {
@@ -96,10 +96,6 @@ h4 {
     background-color: white;
 }
 
-#moreProjects {
-    height: 100vh;
-    background-color: white;
-}
 
 
 #resume {
@@ -187,21 +183,8 @@ ul li:nth-child(3):hover~.box {
     background-size: cover;
     background-position: center center;
 }
-/* more projects styling */
-#moreProjects {
-    /* background-color: cyan; */
-    /* height: 100vh; */
-}
- #boom {
-     height:50px;
-     /* width:50px; */
-     background: red;
-     border: 1px solid black;
- }
 
- /* #moreProjectsContainer {
-     height: 50vh;
- } */
+
 
 /* Pulsing on projects page */
 
@@ -212,10 +195,6 @@ a p:hover {
 a p {
     animation: pulse 3s infinite;
     /* margin-top: 50%; */
-}
-
-.monkey {
-height: 20%;
 }
 
 
@@ -271,43 +250,38 @@ ul li, label, input{
 }
 
 }
-@media screen and (min-width:321px) and (max-width:639px) {
+@media screen and (min-width:321px) and  (max-width:1919px) {
     ul li, label, input{
         font-size: 3vh;
     }
 }
-@media screen and (min-width:640px) and (max-width:959px) {
+/* @media screen and (min-width:640px) and (max-width:959px) {
     ul li, label, input{
         font-size: 3vh;
     }
 }
 @media screen and (min-width:960px) and (max-width:1279px) {ul li, label, input{
     font-size: 3vh;
-}}
-@media screen and (min-width:1280px) and (max-width:1599px) {ul li, label, input{
+}} */
+/* @media screen and  (max-width:1919px) {ul li, label, input{
     font-size: 3vh;
-}}
-@media screen and (min-width:1600px) {ul li, label, input{
-    font-size: 3vh;
-}}
+}} */
+
 @media screen and (min-width:1920px) {ul li, label, input{
     font-size: 4vh;
 }}
 
-/* @media screen and (max-width: 920px) {
-    nav {
-        justify-content: space-around;
-    }
+#moreProjects {
+    height: 100vh;
+background-color: mintcream;
 }
-
-@media screen and (max-width: 600px) {
-    nav {
-        flex-direction: column;
-        align-items: center;
-    }
-} */
 
 
 a:hover{
-    color: yellow;
+    color: yellow;    
+}
+
+.projImg:hover {
+    transform: scale(1.05);
+    border: 2px solid crimson
 }
