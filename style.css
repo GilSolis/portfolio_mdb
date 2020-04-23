@@ -307,3 +307,7 @@ ul li, label, input{
     }
 } */
 
+
+a:hover{
+    color: yellow;
+}
